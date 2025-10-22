@@ -51,39 +51,23 @@ body{font-family:'Lato',system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   .cta-row{flex-direction:column;align-items:flex-start}
 }
 
-.infinity-container.static {
-  position: relative;
-  width: 400px;
-  height: 200px;
-  margin: 50px auto;
+.infinity-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  width: 100%;
 }
 
-.infinity-shape {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0; left: 0;
+.infinity-svg {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
 }
 
 .infinity-text {
-  position: relative;
-  width: 100%;
-  height: 100%;
   font-family: "Georgia", serif;
-  font-size: 1rem;
-  color: var(--deep-green);
+  font-size: 14px;
+  fill: #1b1b1b;
+  letter-spacing: 0.5px;
 }
-
-.infinity-text span {
-  position: absolute;
-  width: 150px;
-  text-align: center;
-  line-height: 1.4;
-}
-
-/* Place each span roughly along an ∞ shape */
-.infinity-text span:nth-child(1) { top: 5%; left: 15%; transform: rotate(-20deg); }
-.infinity-text span:nth-child(2) { top: 25%; left: 65%; transform: rotate(15deg); }
-.infinity-text span:nth-child(3) { top: 55%; left: 30%; transform: rotate(-10deg); }
-.infinity-text span:nth-child(4) { top: 65%; left: 75%; transform: rotate(10deg); }
-.infinity-text span:nth-child(5) { top: 40%; left: 45%; transform: rotate(0deg); }
