@@ -120,3 +120,17 @@ body.adored-page::before {
   z-index: -1;
 }
 
+/* Background for 'Exemplary You' page */
+body.virtues-bg {
+  background: url("assets/tasha1.jpeg") center center / cover no-repeat fixed;
+  position: relative;
+}
+
+body.virtues-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 248, 240, 0.65); /* soft cream overlay */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
