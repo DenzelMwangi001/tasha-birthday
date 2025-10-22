@@ -71,3 +71,20 @@ body{font-family:'Lato',system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   fill: #1b1b1b;
   letter-spacing: 0.5px;
 }
+
+/* 🌸 Background image — only on the Home page */
+body.home-page {
+  background: url("assets/tasha2.jpeg") center center / cover no-repeat fixed;
+  position: relative;
+}
+
+/* optional soft overlay to keep text readable */
+body.home-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 250, 240, 0.6); /* warm cream overlay */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
