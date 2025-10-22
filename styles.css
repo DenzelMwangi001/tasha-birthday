@@ -88,3 +88,20 @@ body.home-page::before {
   z-index: -1;
 }
 
+/* 🌷 Background image — only for the "My Desires" page */
+body.desires-page {
+  background: url("assets/tasha3.jpeg") center center / cover no-repeat fixed;
+  position: relative;
+}
+
+/* Soft overlay for readability */
+body.desires-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 245, 235, 0.6); /* warm cream overlay */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
+
