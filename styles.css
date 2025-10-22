@@ -104,4 +104,19 @@ body.desires-page::before {
   z-index: -1;
 }
 
+/* 🌹 Background image — only for "The Adored" page */
+body.adored-page {
+  background: url("assets/tasha4.jpeg") center center / cover no-repeat fixed;
+  position: relative;
+}
+
+/* Soft overlay for text readability */
+body.adored-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(250, 245, 240, 0.55); /* warm ivory tint */
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
 
